@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Calculo Notas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='calcPage.css'>
+    <script src='calcular.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+</head>
+<body>
+    <div class="containner">
+        <h2>Calculadora</h2>
+        <div class="notas">
+            <label for="n1">P1: </label>
+            <input class="numeric" type="text" id="n1" placeholder="Valor P1"><br>
+            <label for="n2">P2: </label>
+            <input class="numeric" type="text" id="n2" placeholder="Valor P2"><br>
+            <label for="n3">P3: </label>
+            <input class="numeric" type="text" id="n3" placeholder="Valor P3"><br><br>
+        </div>
+        <div class="button-calc">
+            <input class="btn-calc" type="button" value="Calcular Média" id="btnSalvar" onclick="CalcularMedia()"></input>
+            <input class="btn-calc" type="button" value="Calcular Diferença" id="btnSalvar" onclick="CalcularDiferenca()"></input>
+        </div>
+        <br>
+        <input class="screen" value="0" id="txtMedia" readonly></input>
+    </div>
+</body>
+</html>
